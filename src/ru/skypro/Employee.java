@@ -1,12 +1,11 @@
 package ru.skypro;
 
 public class Employee {
-    String fullName;
-    int salary;
-    int department;
-    static int counter;
-    int id;
-    int u;
+    private String fullName;
+    private int salary;
+    private int department;
+    private static int counter;
+    private int id;
 
     public Employee(String fullName, int salary, int department){
         this.id = counter++;
@@ -15,26 +14,26 @@ public class Employee {
         this.department = department;
     }
 
-    private String getFullName() {
+    public String getFullName() {
         return fullName;
     }
 
-    private int getDepartment() {
+    public int getDepartment() {
         return department;
     }
 
-    private int getSalary() {
+    public int getSalary() {
         return salary;
     }
-    private int getId() {
+    public int getId() {
         return id;
     }
 
-    private int setSalary(int salary) {
+    public int setSalary(int salary) {
         return salary;
     }
 
-    private int setDepartment(int department) {
+    public int setDepartment(int department) {
         return department;
     }
 
